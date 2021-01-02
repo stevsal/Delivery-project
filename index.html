@@ -6,9 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="root"></div>
-    
+    <div id="root">
+        <form action="">
+            <input type="text" placeholder="Add place" name="place" id="place">
+            <input type="text" placeholder="Add time" name="time" id="time">
+            <input type="checkbox" name="type" id="box">
+            <label for="box" id="typeLabel">Outgoing</label>
+            <button type="button" onclick="add()">Submit</button>
+        </form>
+        <h1>Outgoings</h1>
+
+        <ul class="outgoings" id="outgoings">
+
+        </ul>
+        <h1>Incomings</h1>
+        <ul class="incomings" id="incomings">
+
+        </ul>
+    </div>
 </body>
-<script src="scripts.js"></script>
+<script src="script.js"></script>
 <link rel="stylesheet" href="main.css">
 </html>

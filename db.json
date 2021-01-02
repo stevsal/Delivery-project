@@ -1,0 +1,72 @@
+{
+  "incomings": [
+    {
+      "id": 1,
+      "title": "Praha",
+      "time": "12:45",
+      "complete": true
+    },
+    {
+      "id": 2,
+      "title": "Wien",
+      "time": "9:45",
+      "complete": true
+    },
+    {
+      "id": 3,
+      "title": "Tallinn",
+      "time": "15:35",
+      "complete": false
+    },
+    {
+      "id": 4,
+      "title": "Brno",
+      "time": "13:00",
+      "complete": false
+    },
+    {
+      "id": 5,
+      "title": "Krakow",
+      "time": "14:00",
+      "complete": false
+    },
+    {
+      "id": 6,
+      "title": "Graz",
+      "time": "15:25",
+      "complete": false
+    }
+  ],
+  "outgoings": [
+    {
+      "id": 1,
+      "title": "Warsaw",
+      "time": "9:30",
+      "complete": true
+    },
+    {
+      "id": 2,
+      "title": "Katowice",
+      "time": "12:35",
+      "complete": false
+    },
+    {
+      "id": 3,
+      "title": "Riga",
+      "time": "15:00",
+      "complete": false
+    },
+    {
+      "id": 4,
+      "title": "Paris",
+      "time": "10:30",
+      "complete": false
+    },
+    {
+      "id": 5,
+      "title": "Gdansk",
+      "time": "12:00",
+      "complete": false
+    }
+  ]
+}
