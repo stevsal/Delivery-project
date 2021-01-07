@@ -53,14 +53,19 @@ function display(result) {
     var obj = ""
     var classType = "<li class='outgoing'"
     var classTypeComp = "<li class='outgoing-complete'"
-    objects.forEach(outgoing => {
-        if (outgoing.complete == true) {
-            obj += classTypeComp
-        } else {
-            obj += classType
-        }
-        obj += " id=" + outgoing.id+">"+ outgoing.title + " "+outgoing.time + "<button class='done'>Done</button>" + "</li>"
-    });
+    if (objects.length == 0) {
+        obj = "No outgoing trips to show"
+    } else {
+        objects.forEach(outgoing => {
+            if (outgoing.complete == true) {
+                obj += classTypeComp
+            } else {
+                obj += classType
+            }
+            obj += " id=" + outgoing.id+">"+ outgoing.title + " "+outgoing.time + "<button class='done'>Done</button>" + "</li>"
+        });
+    }
+    
     document.getElementById("outgoings").innerHTML = obj
 }
 
@@ -70,15 +75,19 @@ function displayInc(result) {
     var obj = ""
     var classType = "<li class='incoming'" 
     var classTypeComp = "<li class='incoming-complete'"
-
-    objects.forEach(incoming => {
-        if (incoming.complete == true) {
-            obj += classTypeComp
-        } else {
-            obj += classType
-        }
-        obj += " id=" + incoming.id+">"+ incoming.title + " "+incoming.time + "<button class='done'>Done</button>" + "</li>"
-    });
+    if (objects.length == 0) {
+        obj = "No incoming trips to show"
+    } else {
+        objects.forEach(incoming => {
+            if (incoming.complete == true) {
+                obj += classTypeComp
+            } else {
+                obj += classType
+            }
+            obj += " id=" + incoming.id+">"+ incoming.title + " "+incoming.time + "<button class='done'>Done</button>" + "</li>"
+        });
+    }
+    
     document.getElementById("incomings").innerHTML = obj
 
 }
