@@ -35,6 +35,12 @@
       "title": "Graz",
       "time": "15:25",
       "complete": false
+    },
+    {
+      "id": 7,
+      "title": "Tartu",
+      "time": "12:30",
+      "complete": false
     }
   ],
   "outgoings": [
@@ -48,7 +54,7 @@
       "id": 2,
       "title": "Katowice",
       "time": "12:35",
-      "complete": false
+      "complete": true
     },
     {
       "id": 3,
